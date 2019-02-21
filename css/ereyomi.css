@@ -1,0 +1,536 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin:0;
+  background: #f2f2f2;
+  width:100%;
+  height:100vh;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+.ereBig {
+  width: 100%;
+  display: flex;
+}
+.ereHead {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  z-index:20;
+}
+.ereHead .a {
+  width:100%;
+}
+.ereMenu{
+  position: relative;
+  display: block;
+  width: 100%;
+  height:0px;
+  background: #ff1a1a;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+.ShowMenu{
+	height:150px;
+	}
+.ereMenu li{
+  display: flex;
+  justify-content: center;
+}
+.ereMenu li a {
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding: 10px 30px;
+  color: white;
+}
+.ereMenu a:hover {
+  background: white;
+  color:#cc0000;
+}
+
+.ereHead .a h3 {
+  float:left;
+  color:white;
+   background: #cc0000;
+  padding: 3px 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 5px 10px;
+  cursor: pointer;
+  border: 2px solid #cc0000;
+}
+.ereHead .a h3:hover {
+  color: #cc0000;
+  background: white;
+}
+.ereBtn {
+    float: right;
+  padding: 5px 10px;
+  border: none;
+  background: #cc0000;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+}
+.ereBtn:hover {
+  color: white;
+  background: #cc0000;
+}
+.ereBody{
+  width: 100%;
+}
+.ereRow {
+  width:100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.name, .about, .exp, .tes{
+   background: white;
+}
+.name, .about, .exp, .edu, .stacks, .tes {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.name {
+  margin-top:35px;
+  height: auto;
+  background: url('../img/cap.jpg') no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size:cover;
+  -o-background-size: cover;
+}
+.nameBox {
+  width: 70%;
+  text-align: center;
+  margin: 80px 0px 50px 0px;
+}
+.nameBox h2 {
+  font-size: 15px;
+  margin-bottom: 0;
+  color: white;
+}
+.nameBox p {
+  margin-top:0;
+  font-size: 13px;
+  color: #ff9999;
+}
+.nameBox a, .project .info button {
+  border: 2px solid #ffb3b3;
+  border-radius:20px;
+  padding: 7px 10px;
+  background: none;
+  color: #ffb3b3;
+  cursor: pointer;
+}
+.nameBox a:hover {
+  background:#ffb3b3;
+  color: white;
+}
+.aboutBox, .expBox, .eduBox, .stacksBox, .tesBox {
+	   margin:30px 0px;
+     width: 90%;
+}
+.eduMain, .stacksBox, .projBox, .tesBox {
+  display: flex;
+  flex-direction: column;
+}
+.aboutBox h2,.expBox h2, .eduBox h2, .stacks h2, .tesBox h2{
+  text-align: center;
+  margin-bottom: 0;
+  color:#ff1a1a;
+}
+.aboutBox hr, .expBox hr, .eduBox hr, .stacks hr, .tesBox hr {
+  margin-top: 2px;
+  margin-bottom: 40px;
+  width: 15%;
+  color: #ff1a1a;
+   border-color:#ff1a1a; 
+}
+.aboutImg {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background:none;
+  overflow: hidden;
+}
+.aboutImg img{
+  width: 100%;
+}
+.aboutBox p{
+  color: grey;
+}
+.expBox1, .expBox2 {
+  display: flex;
+  flex-direction: row;
+}
+.expBox1 .dot {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background: #ff704d;
+  color: white;
+  font-size: 20px;
+  margin-left: 6px;
+  border-radius: 100%;
+}
+.expBox1 .date {
+ margin: 5px 0px 0px 15px ;
+  font-size: 15px;
+}
+.expBox2 {
+  width:100%;
+}
+.expBox2 .line {
+  width:20%;
+  height: auto;
+}
+.line .Dline {
+  width:5px;
+  height: 70px;
+  margin:10px auto;
+  background:  #ff704d;
+}
+.expBox2 .info {
+  width: 80%;
+  float: right;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.expBox2 h3, .eduBox .info h3 {
+  font-size: 16px;
+  margin: 5px 0px;
+  color:#ff704d;
+}
+.expBox2 p {
+  margin-top:5px;
+  color: grey;
+  font-size: 12px;
+}
+.eduBox .info{
+  width: 98%;
+  padding: 5px 8px 0px 10px;
+  border: 2px solid #f2f2f2;
+  background: white;
+  margin-bottom: 20px;
+}
+.eduBox kbd {
+  color: grey;
+}
+.eduBox p {
+  font-size: 14px;
+  color: #737373;
+}
+.stacks {
+  background: white;
+}
+.lang {
+  margin: 5px 0px;
+}
+.stacksBtn {
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid #ff704d;
+  background:#ff4d4d;
+  color:white;
+}
+.stacksBtn:after {
+  content: '\002B';
+  float:right;
+  border:none;
+  color: white;
+  font-size: 10px;
+}
+.active, .stacksBtn:hover{
+  background: #b30000;
+}
+.active:after {
+  content: "\2212";
+}
+.panel {
+  display: block;
+  height: 0px;
+  width: 100%;
+  color:#b30000;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+.panel ul {
+  padding: 10px;
+}
+.tesBox {
+  background: white;
+}
+.slides {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow:hidden;
+}
+.slides .quo {
+  text-align: center;
+	font-size: 100px;
+  margin: 0px;
+	color: #ffb3b3;
+}
+.ereSlides {
+  margin-top: -50px;
+  text-align: center;
+  display: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tesImg {
+  margin: 0 auto;
+  width:150px;
+  height:150px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.tesImg img {
+  width: 100%;
+}
+.ereSlides p {
+  color:grey;
+  font-size:20px;
+ }
+ .ereDots{
+   width: 100%;
+ 	text-align: center;
+}
+.ereDot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background: #ffb3b3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.6s ease;
+}
+.activeDot {
+  background: #ff1a1a;
+}
+.projBox .info {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.project button {
+  margin: 5px 0px 10px 0px;
+}
+.project .info button a {
+  width: 100%;
+  color: #ffb3b3;
+}
+.msg label {
+	color:#ff704d;
+	margin:10px;
+	}
+.msg input[type=text], .msg textarea, .msg input[type=submit]  {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffb3b3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.msg textarea {
+	height:200px;
+	}
+.msg input[type=submit] {
+  background: #ff1a1a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.msg input[type=submit]:hover {
+	background: #ffb3b3;
+	}
+.msg .info {
+  background: none;
+}
+.msg input::placeholder, .msg textarea::placeholder {
+	color: #ffb3b3;
+	}
+.msg .info form {
+	padding: 10px;
+	}
+.foot{
+  background: #ff1a1a;
+  justify-content: center;
+}
+.foot p {
+  margin: 5px;
+  color: white;
+}
+@media screen and (min-width: 350px) {
+        
+        .ereHead .a h3 {
+          padding: 8px 15px;
+          font-size: 18px;
+          border-radius: 8px;
+          margin: 8px 15px;
+         }
+    .ereBtn {
+    padding: 8px 15px;
+    font-size:20px;
+    margin: 6px 10px 0px 0px;
+    }
+
+    .nameBox {
+      width: 70%;
+      margin: 120px 0px 80px 0px;
+    }
+        .aboutImg {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+    }
+    .aboutBox, .expBox, .eduBox, .stacksBox, .tesBox {
+      margin-top:30px;
+        width: 85%;
+    }
+
+  .line .Dline {
+    margin:10px 19px;
+  }
+
+
+}
+
+@media screen and (min-width: 450px) {
+  .aboutBox, .expBox, .eduBox, .stacksBox, .tesBox {
+    width: 85%;
+  }
+  .aboutBox hr, .expBox hr, .eduBox hr, .stacks hr, .tesBox hr {
+  margin-top: 8px;
+  width: 5%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .ereBtn {
+    display:none;
+  }
+  .ereHead{
+    flex-direction: row;
+  }
+  .ereHead .a {
+    width:20%; 
+  }
+  .ereMenu{
+    background:none;
+    width:80%;
+    height:auto;
+  }
+  .ereMenu ul {
+    float: right;
+    margin-right: 5px;
+  }
+
+  .ereHead .ereMenu ul li{
+    display:inline-flex;
+  }
+
+  .ereMenu li a {
+    padding: 20px 10px;
+    color: #cc0000;
+  }
+ .ereMenu li a:hover {
+    color: #ffb3b3;
+  }
+  .ereMenu .download a{
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: white;
+    background: #cc0000;
+  }
+  .ereMenu .download a:hover {
+   background: #ffb3b3;
+    color: #cc0000;
+  }
+  .nameBox {
+    width: 60%;
+    margin: 200px 0px 150px 0px;
+  }
+   .nameBox h2 {
+  font-size: 30px;
+}
+.nameBox p {
+  font-size: 20px;
+}
+  .aboutBox hr, .expBox hr, .eduBox hr, .stacks hr, .tesBox hr {
+  margin-top: 6px;
+  width: 10%;
+  }
+  .slides {
+  height: 400px;
+}
+  .tesImg {
+  width:250px;
+  height:250px;
+  }
+   .msg {
+    background: white;
+  }
+
+}
+
+@media only screen and (min-width: 700px) {
+  
+  .eduBox {
+    width:100%;
+  }
+  .eduMain {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .eduMain .info {
+    width:40%;
+    margin: 15px;
+  }
+   .msg {
+    background: white
+  }
+  .msg .eduBox {
+    width: 100%;
+  }
+  .msg .eduMain .info {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 900px) {
+   .aboutBox hr, .expBox hr, .eduBox hr, .stacks hr, .tesBox hr {
+  margin-top: 8px;
+  width: 3%;
+  }
+}
